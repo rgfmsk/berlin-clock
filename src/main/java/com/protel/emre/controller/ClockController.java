@@ -22,13 +22,14 @@ public class ClockController {
      * Returns BerlinClock time format of either given time or the current time
      * with the help of the optional time parameter
      *
-     * @param time Optional time parameterr
+     * @param time Optional time parameter
      * @return [BerlinClock]
      */
     @RequestMapping(value = {"/berlinClock"}, method = RequestMethod.GET, produces = "application/json")
     public BerlinClock berlinClock(@RequestParam Optional<String> time) {
         ClockUtil cu = new ClockUtil(time);
         return new BerlinClock(cu.getBerlinFormat());
+        //1.0.1 branch push
         //new push branch commit
     }
 }
