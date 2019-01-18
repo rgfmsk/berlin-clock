@@ -22,7 +22,7 @@ public class ClockController {
      * Returns BerlinClock time format of either given time or the current time
      * with the help of the optional time parameter
      *
-     * @param time Optional time parameter
+     * @param time Optional time parameterr
      * @return [BerlinClock]
      */
     @RequestMapping(value = {"/berlinClock"}, method = RequestMethod.GET, produces = "application/json")
